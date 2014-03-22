@@ -66,6 +66,9 @@ section.songs ul li{
   border-radius: 6px;
   background: rgba(255,255,255, 0.6);
 }
+section.songs ul li.all{
+  height:122px;
+}
 section.songs ul li .body{
   background: rgba(255,255,255, 0.6);
   position: relative;
