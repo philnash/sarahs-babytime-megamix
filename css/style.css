@@ -78,6 +78,9 @@ section.songs ul li .body{
   display:table;
   width: 100%;
 }
+section.songs ul li.all .body{
+  min-height:0;
+}
 section.songs ul li .body > img{
   position:absolute;
   top: -47px;
@@ -120,6 +123,9 @@ section.songs ul li .author{
   padding:10px 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+section.songs ul li .author h2{
+  font-weight:normal;
 }
 
 @media all and (max-width: 550px) {
