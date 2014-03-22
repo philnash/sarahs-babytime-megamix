@@ -1,0 +1,145 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+body{
+  padding-top:48px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background: #27ae60;
+  z-index: 10;
+}
+header h1{
+  margin: 0 auto;
+  font-size:30px;
+  line-height:48px;
+  color:#fff;
+  text-align:center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:lighter;
+}
+main{
+  background: #ffdb4c;
+  background-image: linear-gradient(#ffdb4c, #ffcd02);
+  background: -moz-linear-gradient(top, #ffdb4c 0%, #ffcd02 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffdb4c), color-stop(100%,#ffcd02));
+  background: -webkit-linear-gradient(top, #ffdb4c 0%,#ffcd02 100%);
+  background: -o-linear-gradient(top, #ffdb4c 0%,#ffcd02 100%);
+  background: -ms-linear-gradient(top, #ffdb4c 0%,#ffcd02 100%);
+  background: linear-gradient(to bottom, #ffdb4c 0%,#ffcd02 100%);
+}
+section.images{
+  background: #f8f8f8;
+  position:relative;
+  text-align: center;
+}
+section.images img{
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+section.songs{
+  z-index: 5;
+  position:relative;
+/*  background: #FFCF73;*/
+
+}
+section.songs ul{
+  max-width:800px;
+  margin:0 auto;
+  padding:20px 10px;
+}
+section.songs ul li{
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: rgba(255,255,255, 0.6);
+}
+section.songs ul li .body{
+  background: rgba(255,255,255, 0.6);
+  position: relative;
+  min-height: 168px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display:table;
+  width: 100%;
+}
+section.songs ul li .body > img{
+  position:absolute;
+  top: -47px;
+  right:0;
+  height: 121px;
+  border-top-right-radius:6px;
+  border-bottom-right-radius:6px;
+  display:block;
+}
+section.songs ul li .body > img.friends{
+  right:90px;
+  border-radius:0;
+}
+section.songs ul li .body .image{
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  vertical-align:middle;
+}
+section.songs ul li .body .image img{
+  border: 5px solid #FFF0B6;
+  border-radius: 6px;
+  display:block;
+  height: 100px;
+  width: 100px;
+}
+section.songs ul li .body .song{
+  width:35%;
+}
+section.songs ul li .body .song,
+section.songs ul li .body .haiku{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+section.songs ul li .body .haiku p{
+  white-space: pre;
+}
+section.songs ul li .author{
+  padding:10px 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+@media all and (max-width: 550px) {
+  header h1{
+    font-size:24px;
+  }
+  section.songs ul li .body .image{
+    display:block;
+    float:left;
+    margin:0 10px 10px 0;
+  }
+  section.songs ul li .body .song{
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  section.songs ul li .body .haiku{
+    display: block;
+    clear: left;
+    padding:0;
+    text-align:center;
+  }
+  section.songs ul li .body > img.friends{
+    display:none;
+  }
+}
